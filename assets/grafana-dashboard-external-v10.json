@@ -21,7 +21,7 @@
       "type": "grafana",
       "id": "grafana",
       "name": "Grafana",
-      "version": "9.4.7"
+      "version": "10.0.2"
     },
     {
       "type": "datasource",
@@ -91,7 +91,7 @@
               }
             ]
           },
-          "unit": "currencyUSD"
+          "unit": "currencyEUR"
         },
         "overrides": []
       },
@@ -116,7 +116,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -182,7 +182,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -248,7 +248,7 @@
         },
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -480,7 +480,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -553,7 +553,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -625,7 +625,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -698,7 +698,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -779,7 +779,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -851,7 +851,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -923,7 +923,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -1004,7 +1004,7 @@
         "text": {},
         "textMode": "auto"
       },
-      "pluginVersion": "9.4.7",
+      "pluginVersion": "10.0.2",
       "targets": [
         {
           "datasource": {
@@ -1121,6 +1121,6 @@
   "timezone": "",
   "title": "Stock share monitoring",
   "uid": "O9_AegInk",
-  "version": 3,
+  "version": 1,
   "weekStart": ""
 }

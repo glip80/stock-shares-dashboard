@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: ricardochaves/python-lint@v1.4.0
         with:
@@ -33,13 +33,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: "0"
 
-      - uses: actions/setup-python@v4.4.0
+      - uses: actions/setup-python@v5.0.0
         with:
           python-version: "3.x"
+          cache: "pip"
 
       - uses: BSFishy/pip-action@v1
         with:
@@ -65,6 +66,15 @@ jobs:
             estate:
               quantity: 2
               received_dividend: 2.85
+          - name: Bitcoin
+            symbol: BTC-USD
+            purchase:
+              quantity: 1
+              fee: 2
+              cost_price: 5000
+            estate:
+              quantity: 1
+              received_dividend: 0
           EOL
           python3 app/src/testing.py
 
@@ -72,10 +82,10 @@ jobs:
     name: "Building doc"
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Get changed files in the docs folder
         id: changed-files-specific
-        uses: tj-actions/changed-files@v35
+        uses: tj-actions/changed-files@v42
         with:
           files: |
             website/**

@@ -3,7 +3,6 @@ import requests
 import sys
 import prometheus_client
 import yaml
-import os
 from cerberus import Validator
 from confuse import Configuration
 from pathlib import Path
@@ -20,8 +19,7 @@ shares_validator = Validator(dataSchema)
 
 try:
     # Start up the server to expose the metrics.
-    prometheus_client.start_http_server(
-        int(os.getenv('SB_METRICS_PORT', default='8081')))
+    prometheus_client.start_http_server(8081)
     # Init SuiviBourseMetrics
     sb_metrics = SuiviBourseMetrics(config, shares_validator)
     # Schedule run the job on startup.
@@ -38,9 +36,19 @@ if r.status_code != 200:
 
 metrics = r.text
 
+print('metrics:')
 for family in text_string_to_metric_families(metrics):
     for sample in family.samples:
-        if sample.name.startswith('sb_'):
+        if sample.name.startswith('sb_') and sample.name != 'sb_share_info':
             print(sample.name + ' => ' + str(sample.value))
             if sample.value is None:
                 sys.exit(1)
+        if sample.name == 'sb_share_info':
+            print('\nlabels:')
+            for k, v in sample.labels.items():
+                print(k + ' => ' + v)
+                if v is None or v == 'undefined':
+                    print('Undefined label value : ' + k)
+                    sys.exit(1)
+
+print('\nAll checks passed !')

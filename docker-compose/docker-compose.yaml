@@ -5,7 +5,7 @@ services:
     - prometheus
     environment:
     - SB_SCRAPING_INTERVAL=${SCRAPING_INTERVAL}
-    image: paulbrissaud/suivi-bourse-app:3.3.2
+    image: paulbrissaud/suivi-bourse-app:3.6.3
     restart: unless-stopped
     volumes:
     - ./config.yaml:/home/appuser/.config/SuiviBourse/config.yaml:ro
@@ -13,7 +13,7 @@ services:
     container_name: suivi-bourse-graf
     depends_on:
     - prometheus
-    image: grafana/grafana:9.3.2
+    image: grafana/grafana:10.3.3
     ports:
     - 3000:3000
     restart: unless-stopped
@@ -26,7 +26,7 @@ services:
     - --web.console.libraries=/usr/share/prometheus/console_libraries
     - --web.console.templates=/usr/share/prometheus/consoles
     container_name: suivi-bourse-prom
-    image: prom/prometheus:v2.41.0
+    image: prom/prometheus:v2.50.0
     restart: unless-stopped
     volumes:
     - sb_prometheus_data:/prometheus
