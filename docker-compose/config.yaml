@@ -8,7 +8,7 @@ shares:
     cost_price: 119.98
   estate:
     quantity: 2
-    received_dividend: 2.85
+    received_dividend: 0
 - name: Google
   symbol: GOOG
   purchase:
@@ -17,4 +17,22 @@ shares:
     cost_price: 119.98
   estate:
     quantity: 2
-    received_dividend: 2.85
+    received_dividend: 0
+- name: Nvidia
+  symbol: NVDA
+  purchase:
+    quantity: 1
+    fee: 2
+    cost_price: 119.98
+  estate:
+    quantity: 2
+    received_dividend: 0
+- name: Microsoft
+  symbol: MSFT
+  purchase:
+    quantity: 1
+    fee: 2
+    cost_price: 119.98
+  estate:
+    quantity: 2
+    received_dividend: 0

@@ -105,7 +105,7 @@ class SuiviBourseMetrics:
             try:
                 ticker = yf.Ticker(share['symbol'])
                 ticker_info = ticker.info
-                history = ticker.history()
+                history = ticker.history(period="1d", interval="1m")
                 last_quote = (history.tail(1)['Close'].iloc[0])
                 self.sb_share_price.labels(*label_values).set(last_quote)
                 info_values = label_values + [ticker_info.get('currency', 'undefined'), ticker_info.get('exchange', 'undefined'),
