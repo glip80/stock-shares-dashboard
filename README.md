@@ -42,6 +42,7 @@ Run the following command in the `docker-compose` folder :
 
 ```bash
 docker-compose up -d
+docker-compose -f .\docker-compose.dev.yaml build app
 ```
 
 ### 4. Visit Grafana

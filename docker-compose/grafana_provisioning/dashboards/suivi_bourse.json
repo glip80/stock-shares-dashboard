@@ -54,7 +54,7 @@
               }
             ]
           },
-          "unit": "currencyEUR"
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -120,7 +120,7 @@
               }
             ]
           },
-          "unit": "currencyEUR"
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -305,7 +305,7 @@
               }
             ]
           },
-          "unit": "currencyEUR"
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -484,7 +484,7 @@
               }
             ]
           },
-          "unit": "currencyEUR"
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -553,7 +553,7 @@
               }
             ]
           },
-          "unit": "currencyEUR"
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -623,7 +623,7 @@
               }
             ]
           },
-          "unit": "currencyEUR"
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -701,7 +701,7 @@
               }
             ]
           },
-          "unit": "currencyEUR"
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -839,7 +839,7 @@
               }
             ]
           },
-          "unit": "currencyEUR"
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
@@ -917,7 +917,7 @@
               }
             ]
           },
-          "unit": "currencyEUR"
+          "unit": "currencyUSD"
         },
         "overrides": []
       },
